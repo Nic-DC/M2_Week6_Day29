@@ -16,12 +16,13 @@ const genre = function () {
 genre();
 
 // Ex 5
-const dangers = document.querySelectorAll("#tableAlbums .btn-danger");
+
 const deleteSong = function () {
+  const dangers = document.querySelectorAll("#tableAlbums .btn-danger");
   for (let danger of dangers) {
     danger.addEventListener("click", () => {
       console.log("danger");
-      danger.parentElement.parentElement.remove(0);
+      danger.parentElement.parentElement.remove();
     });
   }
 };
@@ -53,6 +54,7 @@ const trackAdded = function () {
     </tr>
   `;
   }
+  deleteSong();
   alert("New Track Added");
 };
 // close the modal
