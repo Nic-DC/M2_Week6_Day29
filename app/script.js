@@ -18,7 +18,7 @@ genre();
 // Ex 5
 
 const deleteSong = function () {
-  const dangers = document.querySelectorAll("#tableAlbums .btn-danger");
+  const dangers = document.querySelectorAll("#tableAlbums .btn-danger"); // needed in the function order to delete after a new track is added
   for (let danger of dangers) {
     danger.addEventListener("click", () => {
       console.log("danger");
@@ -54,7 +54,7 @@ const trackAdded = function () {
     </tr>
   `;
   }
-  deleteSong();
+  deleteSong(); // needed in order to delete after a new track is added
   alert("New Track Added");
 };
 // close the modal
