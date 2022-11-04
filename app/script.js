@@ -27,9 +27,11 @@ const deleteSong = function () {
 };
 deleteSong();
 
-const tableBody = document.getElementById("tableBody");
 // Ex 8
+const tableBody = document.getElementById("tableBody");
+const closeModal = document.getElementById("closeModal");
 const addNewTrack = document.getElementById("addNewTrack");
+
 const trackAdded = function () {
   const number = document.getElementById("number");
   const numberValue = number.value;
@@ -51,6 +53,12 @@ const trackAdded = function () {
     </tr>
   `;
   }
+  alert("New Track Added");
+};
+// close the modal
+const closeTheModal = function () {
+  $("#trackModal").modal("hide");
 };
 addNewTrack.addEventListener("click", trackAdded);
+closeModal.addEventListener("click", closeTheModal);
 // number, artist, title, duration
