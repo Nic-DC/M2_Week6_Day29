@@ -49,3 +49,22 @@
   border-radius: 3px;
   border: 1px solid lightgray;
 }
+
+/* Ex 9 */
+.stylingDanger {
+  /* opacity: 0; */
+  display: none;
+}
+tr:hover .stylingDanger {
+  animation: fadeIn 350ms;
+  display: inline-block;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

@@ -47,9 +47,9 @@ const trackAdded = function () {
     <tr>
       <th scope="row">${numberValue}</th>
       <td>${titleValue}</td>
-      <td>${artistValue}></td>
+      <td>${artistValue}</td>
       <td>${durationValue}</td>
-      <td><button type="button" class="btn btn-danger">Delete</button></td>
+      <td><button type="button" class="btn btn-danger stylingDanger">Delete</button></td>
     </tr>
   `;
   }
@@ -61,4 +61,5 @@ const closeTheModal = function () {
 };
 addNewTrack.addEventListener("click", trackAdded);
 closeModal.addEventListener("click", closeTheModal);
-// number, artist, title, duration
+
+// Ex 9
