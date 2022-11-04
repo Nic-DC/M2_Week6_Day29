@@ -5,7 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <!-- bootstrap -->
+
+    <!-- bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
+    <!-- bootstrap classes-->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
@@ -74,45 +77,108 @@
       </div>
     </nav>
 
-    <div class="container">
-      <!-- Ex1: ALBUM -->
-      <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#album">View Main Album Section</button>
-      <div id="album" class="collapse"> 
-        <div class="row">
-          <div class="col12 col-sm-2 col-md-3 col-lg-4"></div>
-          <div class="col12 col-sm-8 col-md-6 col-lg-4 mt-5">
-            <div class="card">
-              <img
-                src="https://m.media-amazon.com/images/I/51UF9v4PA1L._SY580_.jpg"
-                class="card-img-top"
-                id="ex9"
-                alt="Joe Cocker Live album"
-              />
-              <div class="card-body hideDetails" id="ex9Details">
-                <h5 class="card-title">Joe Cocker Live</h5>
-                <h6 class="card-subtitle mb-2 text-muted">Joe Cocker</h6>
-                <p class="card-text"><small class="text-muted">Blues Rock * 15 Tracks</small></p>
-                <blockquote class="blockquote">
-                  <footer class="blockquote-footer">
-                    "In the end, I don't think you can find soul. Soul finds you."
-                  </footer>
-                </blockquote>
-                <a href="https://www.amazon.com/Joe-Cocker-Live/dp/B000002UVU" class="btn btn-dark mt-2" target="”_blank”"
-                  >Feel the soul!</a
-                >
-              </div>
+    <!-- EX1: Jumbotron -->
+    <div class="jumbotron mask" id="jumbotron">
+      <h1 class="display-4">Joe Cocker Music</h1>
+      <p class="lead">Quiet your mind, Listen, Enjoy</p>
+      <hr class="my-4" />
+      <a class="btn btn-dark btn-lg" href="#" role="button">Go to social</a>
+    </div>
+
+    <!-- EX2: Card Album -->
+    <button type="button" class="btn btn-warning" data-toggle="collapse" data-target="#cardAlbum">
+      View Card Album
+    </button>
+    <div class="container-fluid collapse mb-4" id="cardAlbum">
+      <div class="row">
+        <div class="col-4"></div>
+
+        <div class="col-4">
+          <div class="card text-center">
+            <div class="card-header">
+              <ul class="nav nav-pills card-header-pills d-flex justify-content-between">
+                <li class="nav-item">
+                  <a class="nav-link bg-dark text-white" href="#titles">Album titles</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link bg-dark text-white" href="#year">Release Year</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link bg-dark text-white" href="#tracks">Tracks</a>
+                </li>
+              </ul>
+            </div>
+            <div class="card-body">
+              <ul class="list-group list-group-flush" id="titles">
+                <strong>Album Titles</strong>
+                <li class="list-group-item">Joe Cocker Live</li>
+                <li class="list-group-item">With a Little Help From My Friends</li>
+                <li class="list-group-item">Mad Dogs & Englishmen</li>
+                <li class="list-group-item">Sheffield Steel</li>
+              </ul>
+              <ul class="list-group list-group-flush" id="year">
+                <strong>Release Year</strong>
+                <li class="list-group-item">1969</li>
+                <li class="list-group-item">1970</li>
+                <li class="list-group-item">1971</li>
+                <li class="list-group-item">1972</li>
+              </ul>
+              <ul class="list-group list-group-flush" id="tracks">
+                <strong>Tracks</strong>
+                <li class="list-group-item">26 Tracks</li>
+                <li class="list-group-item">26 Tracks</li>
+                <li class="list-group-item">26 Tracks</li>
+                <li class="list-group-item">26 Tracks</li>
+              </ul>
+              <a href="#" class="btn btn-dark">Feel the energy!</a>
             </div>
           </div>
-          <div class="col12 col-sm-2 col-md-3 col-lg-4"></div>
         </div>
-    </div>
-       
 
-      <!-- EX3: RESPONSIVE section -->
-      <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#responsive">View Responsive Section</button>
-      <div id="responsive" class="collapse">
-        <div class="row mt-5" id="albumsSection">
-        <!-- <div class="responsive-section"> -->
+        <div class="col-4"></div>
+      </div>
+    </div>
+
+    <!-- single album -->
+    <button type="button" class="btn btn-warning" data-toggle="collapse" data-target="#album">
+      View Main Album Section
+    </button>
+    <div class="container collapse" id="album">
+      <div class="row">
+        <div class="col12 col-sm-2 col-md-3 col-lg-4"></div>
+        <div class="col12 col-sm-8 col-md-6 col-lg-4 mt-5">
+          <div class="card">
+            <img
+              src="https://m.media-amazon.com/images/I/51UF9v4PA1L._SY580_.jpg"
+              class="card-img-top"
+              id="ex9"
+              alt="Joe Cocker Live album"
+            />
+            <div class="card-body hideDetails" id="ex9Details">
+              <h5 class="card-title">Joe Cocker Live</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Joe Cocker</h6>
+              <p class="card-text"><small class="text-muted">Blues Rock * 15 Tracks</small></p>
+              <blockquote class="blockquote">
+                <footer class="blockquote-footer">
+                  "In the end, I don't think you can find soul. Soul finds you."
+                </footer>
+              </blockquote>
+              <a href="https://www.amazon.com/Joe-Cocker-Live/dp/B000002UVU" class="btn btn-dark mt-2" target="”_blank”"
+                >Feel the soul!</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col12 col-sm-2 col-md-3 col-lg-4"></div>
+      </div>
+    </div>
+
+    <!-- favorite albums -->
+    <button type="button" class="btn btn-warning" data-toggle="collapse" data-target="#responsive">
+      View Responsive Section
+    </button>
+    <div class="container-fluid collapse" id="responsive">
+      <div class="row mt-5" id="albumsSection">
         <div class="col12 col-sm-6 col-md-4 col-lg-3">
           <div class="card">
             <img
@@ -211,282 +277,355 @@
             </div>
           </div>
         </div>
-        <!-- </div> -->
-      </div></div>
-      
-
-      <!-- EX4: ALBUM REVIEWS section -->
-      <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#reviews">View Reviews Section</button>
-      <div id="reviews" class="collapse">
-        <div class="row mt-5">
-            <div class="col12 col-sm-6 col-lg-7">
-              <img
-                src="https://m.media-amazon.com/images/I/51UF9v4PA1L._SY580_.jpg"
-                class="img-fluid"
-                alt="Joe Cocker Live album"
-              />
-            </div>
-    
-            <div class="col12 col-sm-6 col-lg-5 text-left">
-              <p class="display-4" id="album-reviews">Joe Cocker Live</p>
-    
-              <dl class="row">
-                <dt class="col12 col-sm-3">Band</dt>
-                <dd class="col12 col-sm-9">Joe Cocker</dd>
-    
-                <dt class="col12 col-sm-3">Duration</dt>
-                <dd class="col12 col-sm-9">15 Tracks</dd>
-    
-                <dt class="col12 col-sm-3">Genre</dt>
-                <dd class="col12 col-sm-9">Blues Rock</dd>
-              </dl>
-    
-              <table class="table">
-                <thead class="thead-dark">
-                  <tr>
-                    <th scope="col-4">Track #</th>
-                    <th scope="col-8">Track name</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <th scope="row">1</th>
-                    <td>Feelin' Alright (Live)</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">2</th>
-                    <td>Shelter Me (Live)</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">3</th>
-                    <td>Hitchcock Railway (Live)</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">4</th>
-                    <td>Up Where We Belong (with Maxine Green) [Live]</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">5</th>
-                    <td>Guilty (Live)</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">6</th>
-                    <td>You Can Leave Your Hat On (Live)</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">7</th>
-                    <td>When the Night Comes (Live - Memorial Auditorium)</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">8</th>
-                    <td>Unchain My Heart (Live)</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">9</th>
-                    <td>With a Little Help From My Friends (Live)</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">10</th>
-                    <td>You Are so Beautiful (Live)</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">11</th>
-                    <td>The Letter (Live)</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">12</th>
-                    <td>She Came in Through the Bathroom Window (Live)</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">13</th>
-                    <td>High Time We Went (Live)</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">14</th>
-                    <td>What Are You Doing With a Fool Like Me (Studio Version)</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">15</th>
-                    <td>Living in the Promiseland (Studio Version)</td>
-                  </tr>
-                </tbody>
-              </table>
-              <blockquote class="blockquote">
-                <footer class="blockquote-footer">"In the end, I don't think you can find soul. Soul finds you."</footer>
-              </blockquote>
-            </div>
-          </div>
       </div>
-      
-      <!-- EX5: WORST ALBUMS section -->
-      <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#worstAlbums">View Worst Albums Section</button>
-      <div id="worstAlbums" class="collapse">
-        <div class="row mt-5" id="worst-albums">
-            <div class="col-12 text-left">
-              <p class="display-4">Worst Albums</p>
-              <table class="table" >
-                <thead class="thead-dark">
-                  <tr>
-                    <th scope="col-4">Track #</th>
-                    <th scope="col-8">Track name</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <th scope="row">1</th>
-                    <td>NaN</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">2</th>
-                    <td>NaN</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">3</th>
-                    <td>NaN</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">4</th>
-                    <td>NaN</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">5</th>
-                    <td>NaN</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-      </div>
-      
-      <!-- EX6: FAVOURITE ARTIST section -->
-      <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#favoriteSection">View Favorite Section</button>
-      <div id="favoriteSection" class="collapse">
-        <div class="row mt-5 mb-5" id="favorite">
-            <div class="col-12 text-left">
-                <button type="button" class="btn btn-light pt-3 pb-3 px-3">
-                     One of my favourite artist <span class="badge badge-dark">Joe Cocker</span>
-                </button>
-            </div>
-        </div>
-      </div>
-
-      <!-- EX7: COVERS section -->
-      
-        <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#coversSection">View Covers Section</button>
-        <div id="coversSection" class="collapse">
-            <div class="row mt-5 mb-5" id="covers">
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3 px-0">
-                <img src="https://m.media-amazon.com/images/I/816vGpKLDXL._SX425_.jpg" class="img-fluid" alt="..." />
-              </div>
-              <div class="col-12 col-sm-6 col-md-4 col-lg-3 px-0">
-                <img src="https://m.media-amazon.com/images/I/61W99NyyhYL._SY450_.jpg" class="img-fluid" alt="..." />
-              </div>
-              <div class="col-12 col-sm-6 col-md-4 col-lg-3 px-0">
-                <img src="https://m.media-amazon.com/images/I/61Pth3cUF5L._SX425_.jpg" class="img-fluid" alt="..." />
-              </div>
-              <div class="col-12 col-sm-6 col-md-4 col-lg-3 px-0">
-                <img src="https://m.media-amazon.com/images/I/818YqwRIvsL._SX425_.jpg" class="img-fluid" alt="..." />
-              </div>
-              <div class="col-12 col-sm-6 col-md-4 col-lg-3 px-0">
-                <img src="https://m.media-amazon.com/images/I/816vGpKLDXL._SX425_.jpg" class="img-fluid" alt="..." />
-              </div>
-              <div class="col-12 col-sm-6 col-md-4 col-lg-3 px-0">
-                <img src="https://m.media-amazon.com/images/I/61W99NyyhYL._SY450_.jpg" class="img-fluid" alt="..." />
-              </div>
-              <div class="col-12 col-sm-6 col-md-4 col-lg-3 px-0">
-                <img src="https://m.media-amazon.com/images/I/61Pth3cUF5L._SX425_.jpg" class="img-fluid" alt="..." />
-              </div>
-              <div class="col-12 col-sm-6 col-md-4 col-lg-3 px-0">
-                <img src="https://m.media-amazon.com/images/I/818YqwRIvsL._SX425_.jpg" class="img-fluid" alt="..." />
-              </div>
-              <div class="col-12 col-sm-6 col-md-4 col-lg-3 px-0">
-                <img src="https://m.media-amazon.com/images/I/816vGpKLDXL._SX425_.jpg" class="img-fluid" alt="..." />
-              </div>
-              <div class="col-12 col-sm-6 col-md-4 col-lg-3 px-0">
-                <img src="https://m.media-amazon.com/images/I/61W99NyyhYL._SY450_.jpg" class="img-fluid" alt="..." />
-              </div>
-              <div class="col-12 col-sm-6 col-md-4 col-lg-3 px-0">
-                <img src="https://m.media-amazon.com/images/I/61Pth3cUF5L._SX425_.jpg" class="img-fluid" alt="..." />
-              </div>
-              <div class="col-12 col-sm-6 col-md-4 col-lg-3 px-0">
-                <img src="https://m.media-amazon.com/images/I/818YqwRIvsL._SX425_.jpg" class="img-fluid" alt="..." />
-              </div>
-              <div class="col-12 col-sm-6 col-md-4 col-lg-3 px-0">
-                <img src="https://m.media-amazon.com/images/I/816vGpKLDXL._SX425_.jpg" class="img-fluid" alt="..." />
-              </div>
-              <div class="col-12 col-sm-6 col-md-4 col-lg-3 px-0">
-                <img src="https://m.media-amazon.com/images/I/61W99NyyhYL._SY450_.jpg" class="img-fluid" alt="..." />
-              </div>
-              <div class="col-12 col-sm-6 col-md-4 col-lg-3 px-0">
-                <img src="https://m.media-amazon.com/images/I/61Pth3cUF5L._SX425_.jpg" class="img-fluid" alt="..." />
-              </div>
-              <div class="col-12 col-sm-6 col-md-4 col-lg-3 px-0">
-                <img src="https://m.media-amazon.com/images/I/818YqwRIvsL._SX425_.jpg" class="img-fluid" alt="..." />
-              </div>
-              <div class="col-12 col-sm-6 col-md-4 col-lg-3 px-0">
-                <img src="https://m.media-amazon.com/images/I/816vGpKLDXL._SX425_.jpg" class="img-fluid" alt="..." />
-              </div>
-              <div class="col-12 col-sm-6 col-md-4 col-lg-3 px-0">
-                <img src="https://m.media-amazon.com/images/I/61W99NyyhYL._SY450_.jpg" class="img-fluid" alt="..." />
-              </div>
-              <div class="col-12 col-sm-6 col-md-4 col-lg-3 px-0">
-                <img src="https://m.media-amazon.com/images/I/61Pth3cUF5L._SX425_.jpg" class="img-fluid" alt="..." />
-              </div>
-              <div class="col-12 col-sm-6 col-md-4 col-lg-3 px-0">
-                <img src="https://m.media-amazon.com/images/I/818YqwRIvsL._SX425_.jpg" class="img-fluid" alt="..." />
-              </div>
-            </div>
-       <!-- </div> -->
-        
-      </div>
-
-      <!-- EX8: FOOTER section -->
-
-      <footer class="page-footer font-small black pt-4" id="footer">
-        
-        <div class="container-fluid text-center text-md-left">
-          <div class="row">
-            <div class="col-md-6 mt-md-0 mt-3">
-              <h5 class="text-uppercase">Footer</h5>
-              <p>SoulRock</p>
-            </div>
-
-            <div class="col-md-3 mb-md-0 mb-3">
-              <ul class="list-unstyled">
-                <li>
-                  <a href="https://www.pinterest.com/!">Pinterest
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pinterest" viewBox="0 0 16 16">
-                    <path d="M8 0a8 8 0 0 0-2.915 15.452c-.07-.633-.134-1.606.027-2.297.146-.625.938-3.977.938-3.977s-.239-.479-.239-1.187c0-1.113.645-1.943 1.448-1.943.682 0 1.012.512 1.012 1.127 0 .686-.437 1.712-.663 2.663-.188.796.4 1.446 1.185 1.446 1.422 0 2.515-1.5 2.515-3.664 0-1.915-1.377-3.254-3.342-3.254-2.276 0-3.612 1.707-3.612 3.471 0 .688.265 1.425.595 1.826a.24.24 0 0 1 .056.23c-.061.252-.196.796-.222.907-.035.146-.116.177-.268.107-1-.465-1.624-1.926-1.624-3.1 0-2.523 1.834-4.84 5.286-4.84 2.775 0 4.932 1.977 4.932 4.62 0 2.757-1.739 4.976-4.151 4.976-.811 0-1.573-.421-1.834-.919l-.498 1.902c-.181.695-.669 1.566-.995 2.097A8 8 0 1 0 8 0z"/>
-                  </svg></a>
-                </li>
-                </li>
-              </ul>
-            </div>
-
-            <div class="col-md-3 mb-md-0 mb-3">
-                
-              <ul class="list-unstyled">
-                <li>
-                  <a href="https://github.com/">Github
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
-                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
-                      </svg>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="footer-copyright text-center py-3">
-            <h4>Total albums: <span id="totalAlbums"></span></h4>
-            <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#footer">View Copyright</button>
-            <div id="footer" class="collapse">
-                 © 2022 Copyright:
-                <a href="#"> DNC.com</a>
-            </div>
-        </div>
-      </footer>
     </div>
+
+    <div class="container-fluid collapse" id="reviews">
+      <button type="button" class="btn btn-warning" data-toggle="collapse" data-target="#reviews">
+        View Reviews Section
+      </button>
+
+      <div class="row mt-5">
+        <div class="col12 col-sm-6 col-lg-7">
+          <img
+            src="https://m.media-amazon.com/images/I/51UF9v4PA1L._SY580_.jpg"
+            class="img-fluid"
+            alt="Joe Cocker Live album"
+          />
+        </div>
+
+        <div class="col12 col-sm-6 col-lg-5 text-left">
+          <p class="display-4" id="album-reviews">Joe Cocker Live</p>
+
+          <dl class="row">
+            <dt class="col12 col-sm-3">Band</dt>
+            <dd class="col12 col-sm-9">Joe Cocker</dd>
+
+            <dt class="col12 col-sm-3">Duration</dt>
+            <dd class="col12 col-sm-9">15 Tracks</dd>
+
+            <dt class="col12 col-sm-3">Genre</dt>
+            <dd class="col12 col-sm-9">Blues Rock</dd>
+          </dl>
+
+          <table class="table">
+            <thead class="thead-dark">
+              <tr>
+                <th scope="col-4">Track #</th>
+                <th scope="col-8">Track name</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Feelin' Alright (Live)</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Shelter Me (Live)</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>Hitchcock Railway (Live)</td>
+              </tr>
+              <tr>
+                <th scope="row">4</th>
+                <td>Up Where We Belong (with Maxine Green) [Live]</td>
+              </tr>
+              <tr>
+                <th scope="row">5</th>
+                <td>Guilty (Live)</td>
+              </tr>
+              <tr>
+                <th scope="row">6</th>
+                <td>You Can Leave Your Hat On (Live)</td>
+              </tr>
+              <tr>
+                <th scope="row">7</th>
+                <td>When the Night Comes (Live - Memorial Auditorium)</td>
+              </tr>
+              <tr>
+                <th scope="row">8</th>
+                <td>Unchain My Heart (Live)</td>
+              </tr>
+              <tr>
+                <th scope="row">9</th>
+                <td>With a Little Help From My Friends (Live)</td>
+              </tr>
+              <tr>
+                <th scope="row">10</th>
+                <td>You Are so Beautiful (Live)</td>
+              </tr>
+              <tr>
+                <th scope="row">11</th>
+                <td>The Letter (Live)</td>
+              </tr>
+              <tr>
+                <th scope="row">12</th>
+                <td>She Came in Through the Bathroom Window (Live)</td>
+              </tr>
+              <tr>
+                <th scope="row">13</th>
+                <td>High Time We Went (Live)</td>
+              </tr>
+              <tr>
+                <th scope="row">14</th>
+                <td>What Are You Doing With a Fool Like Me (Studio Version)</td>
+              </tr>
+              <tr>
+                <th scope="row">15</th>
+                <td>Living in the Promiseland (Studio Version)</td>
+              </tr>
+            </tbody>
+          </table>
+          <blockquote class="blockquote">
+            <footer class="blockquote-footer">"In the end, I don't think you can find soul. Soul finds you."</footer>
+          </blockquote>
+        </div>
+      </div>
+    </div>
+
+    <button type="button" class="btn btn-warning" data-toggle="collapse" data-target="#worstAlbums">
+      View Worst Albums Section
+    </button>
+    <div class="container-fluid collapse" id="worstAlbums">
+      <div class="row mt-5" id="worst-albums">
+        <div class="col-12 text-left">
+          <p class="display-4">Worst Albums</p>
+          <table class="table">
+            <thead class="thead-dark">
+              <tr>
+                <th scope="col-4">Track #</th>
+                <th scope="col-8">Track name</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>NaN</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>NaN</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>NaN</td>
+              </tr>
+              <tr>
+                <th scope="row">4</th>
+                <td>NaN</td>
+              </tr>
+              <tr>
+                <th scope="row">5</th>
+                <td>NaN</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <button type="button" class="btn btn-warning" data-toggle="collapse" data-target="#favoriteSection">
+      View Favorite Section
+    </button>
+    <div class="container-fluid collapse" id="favoriteSection">
+      <div class="row mt-5 mb-5" id="favorite">
+        <div class="col-12 text-left">
+          <button type="button" class="btn btn-light pt-3 pb-3 px-3">
+            One of my favourite artist <span class="badge badge-dark">Joe Cocker</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <button type="button" class="btn btn-warning" data-toggle="collapse" data-target="#coversSection">
+      View Covers Section
+    </button>
+    <div class="container-fluid collapse" id="coversSection">
+      <div class="row mt-5 mb-5" id="covers">
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 px-0">
+          <img src="https://m.media-amazon.com/images/I/816vGpKLDXL._SX425_.jpg" class="img-fluid" alt="..." />
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 px-0">
+          <img src="https://m.media-amazon.com/images/I/61W99NyyhYL._SY450_.jpg" class="img-fluid" alt="..." />
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 px-0">
+          <img src="https://m.media-amazon.com/images/I/61Pth3cUF5L._SX425_.jpg" class="img-fluid" alt="..." />
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 px-0">
+          <img src="https://m.media-amazon.com/images/I/818YqwRIvsL._SX425_.jpg" class="img-fluid" alt="..." />
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 px-0">
+          <img src="https://m.media-amazon.com/images/I/816vGpKLDXL._SX425_.jpg" class="img-fluid" alt="..." />
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 px-0">
+          <img src="https://m.media-amazon.com/images/I/61W99NyyhYL._SY450_.jpg" class="img-fluid" alt="..." />
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 px-0">
+          <img src="https://m.media-amazon.com/images/I/61Pth3cUF5L._SX425_.jpg" class="img-fluid" alt="..." />
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 px-0">
+          <img src="https://m.media-amazon.com/images/I/818YqwRIvsL._SX425_.jpg" class="img-fluid" alt="..." />
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 px-0">
+          <img src="https://m.media-amazon.com/images/I/816vGpKLDXL._SX425_.jpg" class="img-fluid" alt="..." />
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 px-0">
+          <img src="https://m.media-amazon.com/images/I/61W99NyyhYL._SY450_.jpg" class="img-fluid" alt="..." />
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 px-0">
+          <img src="https://m.media-amazon.com/images/I/61Pth3cUF5L._SX425_.jpg" class="img-fluid" alt="..." />
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 px-0">
+          <img src="https://m.media-amazon.com/images/I/818YqwRIvsL._SX425_.jpg" class="img-fluid" alt="..." />
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 px-0">
+          <img src="https://m.media-amazon.com/images/I/816vGpKLDXL._SX425_.jpg" class="img-fluid" alt="..." />
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 px-0">
+          <img src="https://m.media-amazon.com/images/I/61W99NyyhYL._SY450_.jpg" class="img-fluid" alt="..." />
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 px-0">
+          <img src="https://m.media-amazon.com/images/I/61Pth3cUF5L._SX425_.jpg" class="img-fluid" alt="..." />
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 px-0">
+          <img src="https://m.media-amazon.com/images/I/818YqwRIvsL._SX425_.jpg" class="img-fluid" alt="..." />
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 px-0">
+          <img src="https://m.media-amazon.com/images/I/816vGpKLDXL._SX425_.jpg" class="img-fluid" alt="..." />
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 px-0">
+          <img src="https://m.media-amazon.com/images/I/61W99NyyhYL._SY450_.jpg" class="img-fluid" alt="..." />
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 px-0">
+          <img src="https://m.media-amazon.com/images/I/61Pth3cUF5L._SX425_.jpg" class="img-fluid" alt="..." />
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 px-0">
+          <img src="https://m.media-amazon.com/images/I/818YqwRIvsL._SX425_.jpg" class="img-fluid" alt="..." />
+        </div>
+      </div>
+    </div>
+
+    <!-- EX4: TABLE -->
+    <button type="button" class="btn btn-warning" data-toggle="collapse" data-target="#tableAlbums">
+      View Table Section
+    </button>
+    <div class="container mt-5 collapse" id="tableAlbums">
+      <table class="table table-striped table-dark">
+        <thead>
+          <tr>
+            <th scope="col">#Track</th>
+            <th scope="col">Title</th>
+            <th scope="col">Artist</th>
+            <th scope="col">Duration</th>
+          </tr>
+        </thead>
+        <tbody id="tableBody">
+          <tr>
+            <th scope="row">1</th>
+            <td>Joe Cocker Live</td>
+            <td>Joe Cocker</td>>
+            <td>2CDs</td>
+            <td><button type="button" class="btn btn-danger">Delete</button></td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>With a Little Help From My Friends</td>
+            <td>Joe Cocker</td></td>
+            <td>2CDs</td>
+            <td><button type="button" class="btn btn-danger">Delete</button></td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Mad Dogs & Englishmen</td>
+            <td>Joe Cocker</td></td>
+            <td>2CDs</td>
+            <td><button type="button" class="btn btn-danger">Delete</button></td>
+          </tr>
+          <tr>
+            <th scope="row">4</th>
+            <td>Sheffield Steel</td>
+            <td>Joe Cocker</td></td>
+            <td>2CDs</td>
+            <td><button type="button" class="btn btn-danger">Delete</button></td>
+          </tr>
+        </tbody>
+      </table>
+      <button type="button" class="btn btn-warning" id="addTrack" data-toggle="modal" data-target="#trackModal">Add track</button>
+    </div>
+
+    <div class="modal fade" id="trackModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Add Track</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body"> 
+            <div class="row">
+              <div class="col-6 mb-3"><input type="text" placeholder="track number" id="number"/></div>
+              <div class="col-6 mb-3"><input type="text" placeholder="track title" id="title"/></div>
+              <div class="col-6"><input type="text" placeholder="artist name " id="artist"/></div>
+              <div class="col-6"><input type="text" placeholder="track duration" id="duration"/></div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-success" data-dismiss="modal" id="addNewTrack">Add</button>
+            <button type="button" class="btn btn-secondary">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="page-footer font-small black pt-4 mt-5 bg-dark" id="footer">
+      <div class="container-fluid text-center text-md-left">
+        <div class="row">
+          <div class="col-md-6 mt-md-0 mt-3">
+            <h5 class="text-uppercase text-monospace">Footer</h5>
+            <!-- Ex15: MODAL & Contact Us -->
+            <button
+              type="button"
+              class="btn btn-warning ml-3 mt-5 mb-5"
+              data-toggle="modal"
+              data-target="#exampleModal"
+            >
+              Contact Us
+            </button>
+            <button type="button" class="btn btn-danger ml-3 mt-5 mb-5" id="deleteBtn">Delete All Cards</button>
+          </div>
+          <div class="col-md-3 mb-md-0 mb-3">
+            <ul class="list-unstyled">
+              <li>
+                <a href="https://www.pinterest.com/!">Pinterest <i class="bi bi-pinterest"></i></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-3 mb-md-0 mb-3">
+            <ul class="list-unstyled">
+              <li>
+                <a href="https://github.com/"
+                  >Github
+                  <i class="bi bi-github"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright text-center py-3">
+        <h4 class="total-travels">Total travels: <span id="totalTravels"></span></h4>
+        <button type="button" class="btn btn-warning" data-toggle="collapse" data-target="#footer">
+          View Copyright
+        </button>
+        <div id="footer" class="collapse">
+          © 2022 Copyright:
+          <a href="#"> DNC.com</a>
+        </div>
+      </div>
+    </footer>
 
     <!-- bootstrap -->
     <script
